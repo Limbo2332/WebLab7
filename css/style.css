@@ -17,13 +17,24 @@
 .gallery img {
   height: auto;
   cursor: pointer;
-  max-height: 400px;
+  height: 400px;
+  width: 600px;
+}
+
+.form-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .feedback-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.feedback-form .submit-button {
+  text-align: center;
 }
 
 .feedback-form button {
@@ -33,6 +44,7 @@
   background-color: #4287f5;
   border: 0;
   border-radius: 5px;
+  text-align: center;
 
   &:hover {
     cursor: pointer;
@@ -42,14 +54,11 @@
 
 .feedback-form input {
   width: 300px;
-  border-radius: 3px;
-  border-color: gray;
 }
 
 .feedback-form textarea {
   width: 300px;
   height: 100px;
-  border-radius: 3px;
   border-color: gray;
   resize: none;
 }
